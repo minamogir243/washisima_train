@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>運行予定表表示</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel" id="imageContainer">
+      <!-- 画像表示領域 -->
+    </div>
+    <div class="right-panel">
+      <label for="trainNumber">表示したい列車の列車番号を入力してください</label><br>
+      <input type="text" id="trainNumber" placeholder="例：123A"><br>
+      <button onclick="showSchedule()">列車の運行予定表を表示する</button>
+      <div id="error" class="error-message"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
